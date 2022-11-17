@@ -4,9 +4,11 @@
 let difficulty = document.getElementById('difficulty-selector');
 
 // Generare un array di 16 numeri in ordine random tutti diversi tra loro in un range da 1 a 100
-const bombArray = arrayGeneratorMinMax(16, 1, 100);
+let bombArray = arrayGeneratorMinMax(16, 1, 100);
+let bombArrayHard = arrayGeneratorMinMax(16, 1, 81);
+let bombArrayExtreme = arrayGeneratorMinMax(16, 1, 49);
 
-console.log(bombArray);
+console.log(bombArray , bombArrayHard , bombArrayExtreme);
 // Aggancio il bottone al file js
 const btn = document.getElementById('button');
 
@@ -110,11 +112,18 @@ function(){
                 newBox.addEventListener('click' , 
         
                     function() {
-        
-                        newBox.classList.toggle('active-red');
-        
-                        console.log('Il numero della cella cliccata è: ' + numeroIterazione);
-        
+                        
+                        // Se l'utente clicca una casella con la bomba questa si colora di rosso
+                        if(bombArrayHard.includes(numeroIterazione)){
+                            newBox.classList.add('bomb-hard');
+
+                            console.log('Perbacco, sei finito su una bomba! Ripperoni!');
+                        } else {
+                            newBox.classList.toggle('active-red');
+            
+                            console.log('Il numero della cella cliccata è: ' + numeroIterazione);
+
+                        }        
                     }
         
                 );
