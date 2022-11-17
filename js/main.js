@@ -129,6 +129,9 @@ function(){
                             newBox.classList.add('bomb-hard');
 
                             console.log('Perbacco, sei finito su una bomba! Ripperoni!');
+
+                            console.log(normalAlert);
+                            normalAlert.classList.add('gameover');
                         } else {
                             newBox.classList.toggle('active-red');
             
