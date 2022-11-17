@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-y: hidden;
+    color: #1B262C;
+    font-family: 'Anton', sans-serif;
+}
+
+header {
+    background-color: #1B262C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    /* DEBUG */
+    height: 10vh;
+}
+
+.header-red {
+    transition: 0.5s;
+    background-color: #820000;
+}
+
+.header-black {
+    transition: 0.5s;
+    background-color: #000;
+}
+
+#right-box {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+label {
+    color: #3282B8;
+}
+
+.label-red {
+    transition: 0.5s;
+    color: #E64848;
+}
+
+.label-black {
+    transition: 0.5s;
+    color: #E2DCC8;
+}
+
+#difficulty-selector {
+    cursor: pointer;
+}
+
+main {
+    background-color: #0F4C75;
+    padding: 30px;
+}
+
+.main-red {
+    transition: 0.5s;
+    background-color: #C21010;
+}
+
+.main-black {
+    transition: 0.5s;
+    background-color: #2C3333;
+}
+
+a {
+    text-decoration: none;
+    color: #BBE1FA;
+    font-size: 30px;
+    display: flex;
+}
+
+.a-red {
+    transition: 0.5s;
+    color: #E64848;
+}
+
+.a-black {
+    transition: 0.5s;
+    color: #B2B2B2;
+}
+
+a:hover {
+    color: #EEEEEE;
+}
+
+#button {
+    padding: 5px;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+
+.button-red {
+    transition: 0.5s;
+    color: #820000;
+}
+
+.button-black {
+    transition: 0.5s;
+    color: #2C3333;
+}
+
+#container {
+    width: 550px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    height: 550px;
+}
+
+
+.box {
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    background-color: #EEEEEE;
+    border: 1px solid #1B262C;
+    cursor: pointer;
+    padding-left: 5px;
+}
+
+.box9 {
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+}
+
+.box7 {
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+}
+
+.generated {
+    border-radius: 20px;
+    transition: 0.5s;
+    border: 1px solid #BBE1FA;
+}
+
+.container-red {
+    border-color: #E64848;
+}
+
+.container-black {
+    border-color: #E2DCC8;
+}
+
+.active {
+    transition: 0.5s;
+    background-color: #3282B8;
+    color: #BBE1FA;
+}
+
+.active-red {
+    transition: 0.5s;
+    background-color: #C21010;
+    color: #E64848;
+}
+
+.active-black {
+    transition: 0.5s;
+    background-color: #100F0F;
+    color: #E2DCC8;
+}
