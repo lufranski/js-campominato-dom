@@ -58,6 +58,10 @@ function(){
                             newBox.classList.add('active');
         
                             console.log('Il numero della cella cliccata è: ' + numeroIterazione);
+
+                            let count = document.getElementsByClassName('active').length;
+
+                            console.log(count);
                         }
                         
     
