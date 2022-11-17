@@ -8,6 +8,9 @@ let bombArray = arrayGeneratorMinMax(16, 1, 100);
 let bombArrayHard = arrayGeneratorMinMax(16, 1, 81);
 let bombArrayExtreme = arrayGeneratorMinMax(16, 1, 49);
 
+const normalAlert = document.getElementById('alert');
+
+
 console.log(bombArray , bombArrayHard , bombArrayExtreme);
 // Aggancio il bottone al file js
 const btn = document.getElementById('button');
@@ -47,6 +50,14 @@ function(){
                             newBox.classList.add('bomb');
 
                             console.log('Perbacco, sei finito su una bomba! Ripperoni!');
+
+                            // Aggancio il div alert al file js
+                            // const normalAlert = document.getElementById('alert');
+
+                            console.log(normalAlert);
+                            // normalAlert.classList.add('gameover');
+                            alert('Perbacco, sei finito su una bomba! Ripperoni!')
+
                         } else {
 
                             newBox.classList.add('active');

@@ -115,6 +115,18 @@ a:hover {
     flex-wrap: wrap;
     padding: 20px;
     height: 550px;
+    position: relative;
+}
+
+#alert {
+    display: none;
+    position: absolute;
+    background-color: #B2B2B2;
+    border-radius: 20px;
+}
+
+.gameover {
+    display: block;
 }
 
 
