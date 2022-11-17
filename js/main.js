@@ -51,12 +51,7 @@ function(){
 
                             console.log('Perbacco, sei finito su una bomba! Ripperoni!');
 
-                            // Aggancio il div alert al file js
-                            // const normalAlert = document.getElementById('alert');
-
-                            console.log(normalAlert);
                             normalAlert.classList.add('gameover');
-                            // alert('Perbacco, sei finito su una bomba! Ripperoni!')
 
                         } else {
 
@@ -130,7 +125,6 @@ function(){
 
                             console.log('Perbacco, sei finito su una bomba! Ripperoni!');
 
-                            console.log(normalAlert);
                             normalAlert.classList.add('gameover');
                         } else {
                             newBox.classList.toggle('active-red');
@@ -200,6 +194,8 @@ function(){
                             newBox.classList.add('bomb');
 
                             console.log('Perbacco, sei finito su una bomba! Ripperoni!');
+
+                            normalAlert.classList.add('gameover');
                         } else {
                             newBox.classList.toggle('active-black');
     
