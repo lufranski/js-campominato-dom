@@ -168,3 +168,8 @@ a:hover {
     background-color: #100F0F;
     color: #E2DCC8;
 }
+
+.bomb {
+    transition: 0.5s;
+    background-color: #820000;
+}

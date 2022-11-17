@@ -7,7 +7,6 @@ let difficulty = document.getElementById('difficulty-selector');
 const bombArray = arrayGeneratorMinMax(16, 1, 100);
 
 console.log(bombArray);
-
 // Aggancio il bottone al file js
 const btn = document.getElementById('button');
 
@@ -31,7 +30,8 @@ function(){
             // Creare la griglia 10x10
             // Creo un ciclo per generare 100 elementi
             for (let i = 1; i < 101; i++) {
-        
+                
+
                 // Creo la variabile di appoggio newBox per agganciarci la funzione boxGenerator 
                 let newBox = boxGenerator();
         
@@ -39,10 +39,19 @@ function(){
                 newBox.addEventListener('click' , 
     
                     function() {
-    
-                        newBox.classList.add('active');
-    
-                        console.log('Il numero della cella cliccata è: ' + numeroIterazione);
+                        
+                        // Se l'utente clicca una casella con la bomba questa si colora di rosso
+                        if(bombArray.includes(numeroIterazione)){
+                            newBox.classList.add('bomb');
+
+                            console.log('Perbacco, sei finito su una bomba! Ripperoni!');
+                        } else {
+
+                            newBox.classList.add('active');
+        
+                            console.log('Il numero della cella cliccata è: ' + numeroIterazione);
+                        }
+                        
     
                     }
     
