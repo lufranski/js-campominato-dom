@@ -115,18 +115,20 @@ a:hover {
     flex-wrap: wrap;
     padding: 20px;
     height: 550px;
-    position: relative;
 }
 
-#alert {
+.shadowrealm {
     display: none;
-    position: absolute;
-    background-color: #B2B2B2;
-    border-radius: 20px;
 }
 
 .gameover {
     display: block;
+    position: fixed;
+    top: 340px;
+    left: 610px;
+    padding: 20px;
+    background-color: #B2B2B2;
+    border-radius: 20px;
 }
 
 

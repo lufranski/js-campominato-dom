@@ -55,8 +55,8 @@ function(){
                             // const normalAlert = document.getElementById('alert');
 
                             console.log(normalAlert);
-                            // normalAlert.classList.add('gameover');
-                            alert('Perbacco, sei finito su una bomba! Ripperoni!')
+                            normalAlert.classList.add('gameover');
+                            // alert('Perbacco, sei finito su una bomba! Ripperoni!')
 
                         } else {
 
