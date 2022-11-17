@@ -180,11 +180,17 @@ function(){
                 newBox.addEventListener('click' , 
     
                     function() {
+                        
+                        // Se l'utente clicca una casella con la bomba questa si colora di rosso
+                        if(bombArrayExtreme.includes(numeroIterazione)){
+                            newBox.classList.add('bomb');
+
+                            console.log('Perbacco, sei finito su una bomba! Ripperoni!');
+                        } else {
+                            newBox.classList.toggle('active-black');
     
-                        newBox.classList.toggle('active-black');
-    
-                        console.log('Il numero della cella cliccata è: ' + numeroIterazione);
-    
+                            console.log('Il numero della cella cliccata è: ' + numeroIterazione);
+                        }    
                     }
     
                 );
